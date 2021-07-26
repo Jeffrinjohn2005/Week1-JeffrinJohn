@@ -1,0 +1,44 @@
+// Bring in libraries
+#include <cs50.h> 
+#include <stdio.h>
+
+// Funtion prototype 
+int askHeight(void)
+void printRow (int height); 
+void printBlok(int rowlength, int rowNumber); 
+
+// Main funtion that delegates the work
+int main(void)
+{
+    
+}
+// Ask the user for its height, repeats until the user give us what we want, positive int between 1-8 
+int askHeight(void) 
+{
+    //Strore user input
+    int height;
+    
+    bool incorrect_input = true; 
+    
+    while (incorrect_input)
+    {
+        // Call funciton that ask for user input
+        height = get_int("Height: "); 
+        
+        if (height > 0 && height < 9) 
+        {
+            // Set the incorrect_input bool to false
+            incorrect_input = false; 
+        }
+    }
+    
+    return height; 
+
+}
+
+
+// Here we print row, we take in arguement height to tell printRow how many total rows to print
+void printRow(int height);
+{
+    // row count keeps track which row focusing on
+}
